@@ -1,0 +1,77 @@
+name: Actualizar NABSA y publicar
+
+on:
+  schedule:
+    # Argentina UTC-3: 10:17, 15:17, 19:17 y 22:17, todos los días.
+    - cron: '17 1,13,18,22 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['nabsa/**', '.github/workflows/nabsa.yml']
+
+concurrency:
+  group: nabsa-publication
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Instalar lector de PDF
+        run: python -m pip install pdfplumber==0.11.9
+      - name: Descargar NABSA y validar datos y filtros
+        run: python nabsa/update.py
+      - name: Guardar datos validados
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html nabsa/state.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Actualizar reporte NABSA validado'
+            git push
+          fi
+      - uses: actions/configure-pages@v5
+      - name: Preparar sitio
+        run: |
+          mkdir -p _site
+          cp index.html _site/index.html
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - name: Publicar GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Verificar publicación pública
+        run: |
+          python - <<'PY'
+          import hashlib,json,time,urllib.request
+          from pathlib import Path
+          expected=json.loads(Path('nabsa/state.json').read_text())['output_sha256']
+          for attempt in range(12):
+              try:
+                  url='https://agustinhermogine-lang.github.io/chartererproduct/?verify='+expected[:12]
+                  body=urllib.request.urlopen(url,timeout=30).read().decode().replace('\r\n','\n')
+                  if hashlib.sha256(body.encode()).hexdigest()==expected:
+                      print('Página pública verificada: contenido idéntico al validado.')
+                      break
+              except Exception as error:
+                  print(type(error).__name__)
+              time.sleep(10)
+          else:
+              raise RuntimeError('La página publicada no coincide con el contenido validado')
+          PY
