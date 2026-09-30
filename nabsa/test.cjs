@@ -58,11 +58,18 @@ assert.equal(get('cw-total-tons').textContent,format(sum(rows)));
 change('cw-from',process.argv[4]);change('cw-product','SBM');
 assert.equal(get('cw-total-tons').textContent,format(sum(rows.filter(r=>r[3]==='SBM'&&r[4]>=process.argv[4]))));
 change('cw-from','2026-08');change('cw-to','2026-08');change('cw-product','');
-assert.equal(get('cw-total-tons').textContent,format(7482076.218));
+assert.equal(get('cw-total-tons').textContent,format(7482076.218+(rows.some(r=>r[3]==='SUNFLOWER')?33000:0)));
 change('cw-from','2026-07');change('cw-to','2026-07');
-assert.equal(get('cw-total-tons').textContent,format(8642623.637));
+assert.equal(get('cw-total-tons').textContent,format(8642623.637+(rows.some(r=>r[3]==='SUNFLOWER')?48940:0)));
 const baselineHtml=fs.readFileSync(process.argv[3],'utf8');
 const beforeRows=JSON.parse(dataBlock(baselineHtml,'cw-shipper-data')).filter(r=>r[4]<'2026-07');
 assert.deepEqual(rows.filter(r=>r[4]<'2026-07'),beforeRows);
+if(rows.some(r=>r[3]==='SUNFLOWER')){
+change('cw-from','2026-07');change('cw-to',process.argv[4]);change('cw-product','SUNFLOWER');
+assert.equal(get('cw-total-tons').textContent,format(sum(rows.filter(r=>r[3]==='SUNFLOWER'))));
+assert.equal(sum(rows.filter(r=>r[3]==='SUNFLOWER'&&r[4]==='2026-07')),48940);
+assert.equal(sum(rows.filter(r=>r[3]==='SUNFLOWER'&&r[4]==='2026-08')),33000);
+assert.deepEqual([...new Set(rows.filter(r=>r[3]==='SUNFLOWER'&&r[4]<='2026-08').map(r=>r[2]))].sort(),['FRANCE','NETHERLANDS','SPAIN','UNITED STATES']);
+}
 console.log('PASS NABSA totals, SBM, shipper integration, date extension and missing-month display');
 })().catch(e=>{console.error(e);process.exitCode=1;});
