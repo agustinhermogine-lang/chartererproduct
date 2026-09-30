@@ -20,7 +20,7 @@ if '--pdf' not in sys.argv:
     body=urllib.request.urlopen(request,timeout=90).read()
     assert body.startswith(b'%PDF'), 'NABSA did not return a PDF'
     pdf.write_bytes(body)
-products={'CORN':'MAIZE','MAIZE':'MAIZE','WHEAT':'WHEAT','SOYA BEAN':'SOYA','SOYBEAN':'SOYA','SOYBEANS':'SOYA','BARLEY':'BARLEY','SORGHUM':'SORGHUM','SOYBEANMEAL':'SBM','SOYBEANMEAL HIPRO':'SBM','SOYBEAN MEAL':'SBM','SOYABEANMEAL PELLETS':'SBM'}
+products={'SUN FLOWER SEEDS':'SUNFLOWER','SUNFLOWER SEED':'SUNFLOWER','SUNFLOWER SEEDS':'SUNFLOWER','CORN':'MAIZE','MAIZE':'MAIZE','WHEAT':'WHEAT','SOYA BEAN':'SOYA','SOYBEAN':'SOYA','SOYBEANS':'SOYA','BARLEY':'BARLEY','SORGHUM':'SORGHUM','SOYBEANMEAL':'SBM','SOYBEANMEAL HIPRO':'SBM','SOYBEAN MEAL':'SBM','SOYABEANMEAL PELLETS':'SBM'}
 records=[]; textcount=0
 with pdfplumber.open(pdf) as doc:
     heading=doc.pages[0].extract_text()
@@ -75,12 +75,12 @@ for month,snapshot in sorted(existing.items()):
         counts[product]+=1;newrows.append(r)
 assert newrows,'No eligible records'
 end=max(existing); relations=sorted({k[:3] for k in tn})
-s=base
+s=base.replace('--viz-series-6:', '--viz-series-7: light-dark(rgb(174 133 15), rgb(231 190 65));\n  --viz-series-6:')
 for id,extra in [('cw-shipper-data',[[*k,float(v)] for k,v in sorted(sh.items())]),('cw-tonnage-data',[[*k,float(v)] for k,v in sorted(tn.items())]),('cw-data',relations)]:
     pattern=r'(<script[^>]*id="'+id+r'"[^>]*>)(.*?)(</script>)';m=re.search(pattern,s,re.S)
     payload=json.dumps(base_blocks[id]+extra,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')
     s=s[:m.start(2)]+payload+s[m.end(2):]
-s=s.replace("'BARLEY','SORGHUM'];","'BARLEY','SORGHUM','SBM'];").replace("SORGHUM:'Sorgo'}","SORGHUM:'Sorgo',SBM:'Harina de soja argentina'}")
+s=s.replace("'BARLEY','SORGHUM'];","'BARLEY','SORGHUM','SBM','SUNFLOWER'];").replace("SORGHUM:'Sorgo'}","SORGHUM:'Sorgo',SBM:'Harina de soja argentina',SUNFLOWER:'Semilla de girasol (Sunflower seed)'}")
 s=s.replace('value="2026-07"','value="'+end+'"').replace('max="2026-07"','max="'+end+'"').replace("'2026-07'","'"+end+"'")
 s=s.replace('2022–2026 · Hoja TONS BY CARTERER','2022–'+end[:4]+' · Excel + NABSA').replace('Histórico completo de DATOS','DATOS + NABSA')
 s=s.replace('2022–2026','2022–'+end[:4])
@@ -90,7 +90,7 @@ while f'{y:04}-{m:02}'<end:
     if m==13:y+=1;m=1
     allmonths.append(f'{y:04}-{m:02}')
 missing=[m for m in allmonths if m not in existing]
-note=f'NABSA: reporte {date}. Datos diarios provisorios, sujetos a revisión. Coordinator = shipper. Nuevos registros: origen ARGENTINA; harina de soja disponible únicamente desde los reportes NABSA incorporados. Histórico Excel hasta {cutoff}.'
+note=f'NABSA: reporte {date}. Datos diarios provisorios, sujetos a revisión. Coordinator = shipper. Nuevos registros: origen ARGENTINA; harina de soja y semilla de girasol disponibles únicamente desde los reportes NABSA incorporados. Histórico Excel hasta {cutoff}.'
 if missing:note+=' Períodos pendientes, no equivalen a cero: '+', '.join(missing)+'.'
 if replaced:note+=' Julio 2026 sustituido por el acumulado NABSA aportado por el usuario (01 al 31 de julio, origen argentino); no se suma al julio del Excel.'
 if '2026-08' in existing and existing['2026-08'].get('source'):note+=' Agosto 2026 incorporado del acumulado mensual aportado por el usuario (01 al 31 de agosto).'
@@ -98,7 +98,7 @@ note+=' Los acumulados incluyen solo períodos disponibles; no comparar el últi
 s=s.replace('<p id="cw-search-help"', '<p id="cw-nabsa-status" class="text-small text-muted">'+html.escape(note)+'</p>\n<p id="cw-search-help"')
 needle="      const keys=grain==='year'?[...new Set(monthRange(from,to).map(m=>m.slice(0,4)))]:monthRange(from,to);"
 assert needle in s
-s=s.replace(needle,"      const coveredMonths=monthRange(from,to).filter(m=>!"+json.dumps(missing)+".includes(m)&&(!productSelect.value||productSelect.value!=='SBM'||m>='"+min(existing)+"'));\n      const keys=grain==='year'?[...new Set(coveredMonths.map(m=>m.slice(0,4)))]:coveredMonths;")
+s=s.replace(needle,"      const coveredMonths=monthRange(from,to).filter(m=>!"+json.dumps(missing)+".includes(m)&&(!productSelect.value||!['SBM','SUNFLOWER'].includes(productSelect.value)||m>='"+min(existing)+"'));\n      const keys=grain==='year'?[...new Set(coveredMonths.map(m=>m.slice(0,4)))]:coveredMonths;")
 # Suppress period-over-period changes with incomplete coverage instead of implying comparability.
 s=s.replace("const requested=root.querySelector('#cw-grain').value;","const requested=root.querySelector('#cw-grain').value;")
 s=s.replace("      renderShipperSummary(from,to);","      renderShipperSummary(from,to);\n      if(to>='"+min(existing)+"'){root.querySelector('#cw-latest-change').textContent='—';root.querySelector('#cw-grain-note').textContent+=' · datos parciales NABSA';tbody.children&&Array.from(tbody.children).forEach(tr=>{tr.children[2].textContent='—';});}")
