@@ -25220,20 +25220,21 @@
       ]
     }
   },
-  "output_sha256": "01fddd30b99037e1e4a98276e72cd890751dfbe6a6a951e1431ac94fb7d1b8f9",
+  "output_sha256": "ba4009b3a360f57465e2806261cfc7ed48341b0817d0ec379d07b46ba7efba01",
   "report": {
     "report_date": "2026-09-29",
     "source_rows": 632,
-    "eligible_rows": 993,
+    "eligible_rows": 997,
     "products": {
       "SBM": 358,
       "MAIZE": 461,
       "WHEAT": 93,
       "SORGHUM": 12,
+      "SUNFLOWER": 4,
       "SOYA": 51,
       "BARLEY": 18
     },
-    "snapshot_tons": 24439134.175,
+    "snapshot_tons": 24521074.175,
     "missing_months": [],
     "pdf_sha256": "7073ca12802c4dd7b593bcf70a8bce7bb56d621c927776b04468e3d707c9748f"
   }
