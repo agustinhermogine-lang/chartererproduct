@@ -33781,9 +33781,9 @@
       ]
     },
     "2026-11": {
-      "date": "2026-11-12",
+      "date": "2026-11-13",
       "url": "https://www.nabsa.com.ar/assets/vessels_sailed_update.pdf",
-      "sha256": "04174feeba76e2328972512ad2415e55b0a58128199b729707692e3b9a367f0c",
+      "sha256": "880549275f78ff95961d8ebca8e48728bef83843a6afd8c6e2aca7b13c50fd2f",
       "rows": [
         [
           "SAN LORENZO",
@@ -33791,10 +33791,10 @@
           "CAPTAIN RABIE",
           "SAILED",
           "2026-11-01",
-          "12.600,00",
+          "5.378,80",
           "CORN",
           "ARGENTINA",
-          "SYRIA",
+          "LEBANON",
           "BUNGE",
           "BUNGE"
         ],
@@ -33817,8 +33817,8 @@
           "CAPTAIN RABIE",
           "SAILED",
           "2026-11-01",
-          "12.622,60",
-          "SOYA BEAN",
+          "12.600,00",
+          "CORN",
           "ARGENTINA",
           "SYRIA",
           "BUNGE",
@@ -33830,10 +33830,10 @@
           "CAPTAIN RABIE",
           "SAILED",
           "2026-11-01",
-          "5.378,80",
-          "CORN",
+          "12.622,60",
+          "SOYA BEAN",
           "ARGENTINA",
-          "LEBANON",
+          "SYRIA",
           "BUNGE",
           "BUNGE"
         ],
@@ -34233,11 +34233,11 @@
           "BOW LEOPARD",
           "SAILED",
           "2026-11-04",
-          "1.000,00",
+          "1.650,00",
           "CORN OIL",
           "ARGENTINA",
           "NETHERLANDS",
-          "BUNGE",
+          "ACA",
           "MARVESA"
         ],
         [
@@ -34246,11 +34246,11 @@
           "BOW LEOPARD",
           "SAILED",
           "2026-11-04",
-          "1.650,00",
+          "1.000,00",
           "CORN OIL",
           "ARGENTINA",
           "NETHERLANDS",
-          "ACA",
+          "BUNGE",
           "MARVESA"
         ],
         [
@@ -34363,8 +34363,8 @@
           "BOW LEOPARD",
           "SAILED",
           "2026-11-06",
-          "925,00",
-          "SUN FLOWER OIL",
+          "3.000,00",
+          "OLEIN",
           "ARGENTINA",
           "NETHERLANDS",
           "BUNGE",
@@ -34376,12 +34376,38 @@
           "BOW LEOPARD",
           "SAILED",
           "2026-11-06",
-          "3.000,00",
-          "OLEIN",
+          "925,00",
+          "SUN FLOWER OIL",
           "ARGENTINA",
           "NETHERLANDS",
           "BUNGE",
           "MARVESA"
+        ],
+        [
+          "SAN LORENZO",
+          "T.F.A. SAN MARTIN",
+          "AGIOS FANOURIOS",
+          "SAILED",
+          "2026-11-06",
+          "4.904,01",
+          "MESZ",
+          "UNITED STATES",
+          "ARGENTINA",
+          "ACA",
+          "MOSAIC"
+        ],
+        [
+          "SAN LORENZO",
+          "T.F.A. SAN MARTIN",
+          "AGIOS FANOURIOS",
+          "SAILED",
+          "2026-11-06",
+          "2.500,00",
+          "MAP",
+          "UNITED STATES",
+          "ARGENTINA",
+          "BUNGE",
+          "MOSAIC"
         ],
         [
           "SAN LORENZO",
@@ -34407,32 +34433,6 @@
           "UNITED STATES",
           "ARGENTINA",
           "BUNGE",
-          "MOSAIC"
-        ],
-        [
-          "SAN LORENZO",
-          "T.F.A. SAN MARTIN",
-          "AGIOS FANOURIOS",
-          "SAILED",
-          "2026-11-06",
-          "2.500,00",
-          "MAP",
-          "UNITED STATES",
-          "ARGENTINA",
-          "BUNGE",
-          "MOSAIC"
-        ],
-        [
-          "SAN LORENZO",
-          "T.F.A. SAN MARTIN",
-          "AGIOS FANOURIOS",
-          "SAILED",
-          "2026-11-06",
-          "4.904,01",
-          "MESZ",
-          "UNITED STATES",
-          "ARGENTINA",
-          "ACA",
           "MOSAIC"
         ],
         [
@@ -34467,8 +34467,8 @@
           "SUPER NOVA",
           "SAILED",
           "2026-11-06",
-          "7.149,32",
-          "SOYA HULL PELLETS",
+          "41.227,09",
+          "SOYBEANMEAL",
           "ARGENTINA",
           "ITALY",
           "COFCO",
@@ -34480,8 +34480,8 @@
           "SUPER NOVA",
           "SAILED",
           "2026-11-06",
-          "41.227,09",
-          "SOYBEANMEAL",
+          "7.149,32",
+          "SOYA HULL PELLETS",
           "ARGENTINA",
           "ITALY",
           "COFCO",
@@ -34532,8 +34532,8 @@
           "EPSON TRADER",
           "SAILED",
           "2026-11-07",
-          "25.300,00",
-          "SOYBEANMEAL",
+          "4.000,00",
+          "SOYA HULL PELLETS",
           "ARGENTINA",
           "IRELAND",
           "LDC",
@@ -34545,8 +34545,8 @@
           "EPSON TRADER",
           "SAILED",
           "2026-11-07",
-          "4.000,00",
-          "SOYA HULL PELLETS",
+          "25.300,00",
+          "SOYBEANMEAL",
           "ARGENTINA",
           "IRELAND",
           "LDC",
@@ -34623,11 +34623,11 @@
           "ARUNA NAZIK",
           "SAILED",
           "2026-11-08",
-          "23.040,00",
+          "16.388,79",
           "SOYBEANMEAL",
           "ARGENTINA",
           "POLAND",
-          "YPF",
+          "SYNGENTA",
           "LDC"
         ],
         [
@@ -34649,11 +34649,11 @@
           "ARUNA NAZIK",
           "SAILED",
           "2026-11-08",
-          "16.388,79",
+          "23.040,00",
           "SOYBEANMEAL",
           "ARGENTINA",
           "POLAND",
-          "SYNGENTA",
+          "YPF",
           "LDC"
         ],
         [
@@ -34766,8 +34766,8 @@
           "PROTECTOR",
           "SAILED",
           "2026-11-09",
-          "7.946,76",
-          "SOYA HULL PELLETS",
+          "8.254,56",
+          "SUN FLOWER MEAL PELLETS",
           "ARGENTINA",
           "NETHERLANDS",
           "AGD",
@@ -34779,11 +34779,11 @@
           "PROTECTOR",
           "SAILED",
           "2026-11-09",
-          "8.254,56",
-          "SUN FLOWER MEAL PELLETS",
-          "ARGENTINA",
+          "24.780,94",
+          "SOYBEANMEAL",
+          "PARAGUAY",
           "NETHERLANDS",
-          "AGD",
+          "COPAGRA",
           "IGMA"
         ],
         [
@@ -34805,11 +34805,11 @@
           "PROTECTOR",
           "SAILED",
           "2026-11-09",
-          "24.780,94",
-          "SOYBEANMEAL",
-          "PARAGUAY",
+          "7.946,76",
+          "SOYA HULL PELLETS",
+          "ARGENTINA",
           "NETHERLANDS",
-          "COPAGRA",
+          "AGD",
           "IGMA"
         ],
         [
@@ -34844,19 +34844,6 @@
           "HL COURAGE",
           "SAILED",
           "2026-11-10",
-          "11.220,00",
-          "CORN",
-          "ARGENTINA",
-          "SOUTH AFRICA",
-          "COFCO",
-          "SEABOARD"
-        ],
-        [
-          "SAN LORENZO",
-          "COFCO INTL. SOUTH BERTH (EX COFCO SOUTH)",
-          "HL COURAGE",
-          "SAILED",
-          "2026-11-10",
           "12.700,00",
           "CORN",
           "ARGENTINA",
@@ -34879,6 +34866,19 @@
         ],
         [
           "SAN LORENZO",
+          "COFCO INTL. SOUTH BERTH (EX COFCO SOUTH)",
+          "HL COURAGE",
+          "SAILED",
+          "2026-11-10",
+          "11.220,00",
+          "CORN",
+          "ARGENTINA",
+          "SOUTH AFRICA",
+          "COFCO",
+          "SEABOARD"
+        ],
+        [
+          "SAN LORENZO",
           "ACA SAN LORENZO",
           "HOANH SON ATLANTIC",
           "SAILED",
@@ -34896,11 +34896,11 @@
           "OTTO H",
           "SAILED",
           "2026-11-10",
-          "3.700,00",
+          "9.300,00",
           "SOYBEAN OIL",
           "ARGENTINA",
           "INDIA",
-          "YPF",
+          "BUNGE",
           "BUNGE"
         ],
         [
@@ -34909,11 +34909,11 @@
           "OTTO H",
           "SAILED",
           "2026-11-10",
-          "9.300,00",
+          "3.700,00",
           "SOYBEAN OIL",
           "ARGENTINA",
           "INDIA",
-          "BUNGE",
+          "YPF",
           "BUNGE"
         ],
         [
@@ -34987,11 +34987,11 @@
           "MARITEA",
           "SAILED",
           "2026-11-11",
-          "6.475,00",
+          "10.525,00",
           "SOYBEAN OIL",
           "ARGENTINA",
           "MOROCCO",
-          "YPF",
+          "BUNGE",
           "BUNGE"
         ],
         [
@@ -35000,11 +35000,11 @@
           "MARITEA",
           "SAILED",
           "2026-11-11",
-          "10.525,00",
+          "6.475,00",
           "SOYBEAN OIL",
           "ARGENTINA",
           "MOROCCO",
-          "BUNGE",
+          "YPF",
           "BUNGE"
         ],
         [
@@ -35032,6 +35032,45 @@
           "BRAZIL",
           "BUNGE",
           "BUNGE"
+        ],
+        [
+          "SAN LORENZO",
+          "SAN BENITO SAN LORENZO",
+          "THOR MAGNHILD",
+          "SAILED",
+          "2026-11-12",
+          "41.633,90",
+          "SOYBEANMEAL",
+          "ARGENTINA",
+          "JORDAN",
+          "MOLINOS AGRO S.A.",
+          "INVICTUS"
+        ],
+        [
+          "SAN LORENZO",
+          "COFCO INTL. PGSM SOUTH BERTH (EX NIDERA SAN MARTIN)",
+          "OCEAN HARVEST",
+          "SAILED",
+          "2026-11-13",
+          "30.589,97",
+          "CORN",
+          "ARGENTINA",
+          "CHILE",
+          "COFCO",
+          "ADM"
+        ],
+        [
+          "SAN LORENZO",
+          "COFCO INTL. PGSM SOUTH BERTH (EX NIDERA SAN MARTIN)",
+          "OCEAN HARVEST",
+          "SAILED",
+          "2026-11-13",
+          "9.392,72",
+          "SOYBEANMEAL",
+          "ARGENTINA",
+          "CHILE",
+          "COFCO",
+          "ADM"
         ],
         [
           "ROSARIO",
@@ -35117,11 +35156,11 @@
           "OSSA",
           "SAILED",
           "2026-11-04",
-          "7.000,00",
+          "35.103,27",
           "CORN",
           "ARGENTINA",
           "CHILE",
-          "UNION AGRICOLA AVELLANEDA COOP.LTDA.",
+          "LDC",
           "GRANELES DE CHILE"
         ],
         [
@@ -35130,11 +35169,11 @@
           "OSSA",
           "SAILED",
           "2026-11-04",
-          "35.103,27",
+          "7.000,00",
           "CORN",
           "ARGENTINA",
           "CHILE",
-          "LDC",
+          "UNION AGRICOLA AVELLANEDA COOP.LTDA.",
           "GRANELES DE CHILE"
         ],
         [
@@ -35156,11 +35195,11 @@
           "BLACKY",
           "SAILED",
           "2026-11-04",
-          "23.453,00",
+          "5.000,00",
           "SORGHUM",
           "ARGENTINA",
           "CHINA",
-          "COFCO",
+          "GEAR",
           "COFCO"
         ],
         [
@@ -35169,11 +35208,11 @@
           "BLACKY",
           "SAILED",
           "2026-11-04",
-          "5.000,00",
+          "23.453,00",
           "SORGHUM",
           "ARGENTINA",
           "CHINA",
-          "GEAR",
+          "COFCO",
           "COFCO"
         ],
         [
@@ -35333,6 +35372,58 @@
           "GREENERGY FUELS LTD"
         ],
         [
+          "ROSARIO",
+          "NEW MOLE SOUTH (TERMINAL PUERTO ROSARIO)",
+          "TUNA S",
+          "SAILED",
+          "2026-11-10",
+          "18.005,50",
+          "SOYBEANMEAL",
+          "BOLIVIA",
+          "PERU",
+          "CARGILL",
+          "CARGILL"
+        ],
+        [
+          "ROSARIO",
+          "ADM AGRO ARROYO SECO (EX TOEPFER)",
+          "RISOLUTO",
+          "SAILED",
+          "2026-11-11",
+          "49.870,00",
+          "SOYA BEAN",
+          "ARGENTINA",
+          "CHINA",
+          "ADM",
+          "WILMAR"
+        ],
+        [
+          "ROSARIO",
+          "CARGILL VGG VILLA GOBERNADOR GALVEZ",
+          "ASTRO DENEBOLA",
+          "SAILED",
+          "2026-11-11",
+          "33.024,94",
+          "SOYBEANMEAL",
+          "ARGENTINA",
+          "ECUADOR",
+          "CARGILL",
+          "CARGILL"
+        ],
+        [
+          "ROSARIO",
+          "CARGILL PUNTA ALVEAR",
+          "TUNA S",
+          "SAILED",
+          "2026-11-11",
+          "15.090,56",
+          "CORN",
+          "ARGENTINA",
+          "PERU",
+          "CARGILL",
+          "CARGILL"
+        ],
+        [
           "SAN NICOLAS",
           "SIDERAR IRON ORE) BERTH A (QUAY SOUTH) INGENIERO BUITRAGO",
           "CS SATIRA",
@@ -35429,10 +35520,10 @@
           "HAFNIA AVENTURINE",
           "SAILED",
           "2026-11-05",
-          "16.000,00",
-          "ETHANOL",
+          "4.000,00",
+          "BIODIESEL",
           "PARAGUAY",
-          "BRAZIL",
+          "NETHERLANDS",
           "INPASA PARAGUAY",
           "INPASA PARAGUAY"
         ],
@@ -35442,10 +35533,10 @@
           "HAFNIA AVENTURINE",
           "SAILED",
           "2026-11-05",
-          "4.000,00",
-          "BIODIESEL",
+          "16.000,00",
+          "ETHANOL",
           "PARAGUAY",
-          "NETHERLANDS",
+          "BRAZIL",
           "INPASA PARAGUAY",
           "INPASA PARAGUAY"
         ],
@@ -35474,6 +35565,19 @@
           "ARGENTINA",
           "SIDERCA",
           "SIDERCA"
+        ],
+        [
+          "CAMPANA",
+          "ODFJELL TAGSA CAMPANA",
+          "BOW CHAIN",
+          "SAILED",
+          "2026-11-11",
+          "1.036,00",
+          "OCTENE",
+          "BRAZIL",
+          "ARGENTINA",
+          "DOW CHEMICAL COMPANY",
+          "DOW CHEMICAL COMPANY"
         ],
         [
           "CAMPANA",
@@ -35694,7 +35798,7 @@
           "ARGENTINA",
           "KOREA (REPUBLIC OF SOUTH KOREA)",
           "LDC",
-          "NOT AVAILABLE"
+          "ETG WORLD"
         ],
         [
           "BAHIA BLANCA",
@@ -35876,7 +35980,7 @@
           "ARGENTINA",
           "MALAYSIA",
           "ADM",
-          "NOT AVAILABLE"
+          "SUCDEN"
         ],
         [
           "BAHIA BLANCA",
@@ -35890,6 +35994,19 @@
           "UNITED STATES",
           "VISTA OIL & GAS",
           "NOT AVAILABLE"
+        ],
+        [
+          "BAHIA BLANCA",
+          "OTAMERICA 2 PUERTO ROSALES",
+          "CABO DE HORNOS",
+          "SAILED",
+          "2026-11-06",
+          "33.000,00",
+          "CRUDE OIL",
+          "ARGENTINA",
+          "ARGENTINA",
+          "SHELL",
+          "SHELL"
         ],
         [
           "BAHIA BLANCA",
@@ -35919,6 +36036,19 @@
         ],
         [
           "BAHIA BLANCA",
+          "OTAMERICA 1 PUERTO ROSALES",
+          "ARIANE",
+          "SAILED",
+          "2026-11-08",
+          "65.000,00",
+          "CRUDE OIL",
+          "ARGENTINA",
+          "THAILAND",
+          "CHEVRON",
+          "NOT AVAILABLE"
+        ],
+        [
+          "BAHIA BLANCA",
           "TERMINAL BAHIA BLANCA BERTHS 9 PUERTO INGENIERO WHITE",
           "BANGLAR AGRAJATRA",
           "SAILED",
@@ -35941,7 +36071,7 @@
           "ARGENTINA",
           "VIETNAM",
           "BUNGE",
-          "NOT AVAILABLE"
+          "CJ INTERNATIONAL"
         ],
         [
           "BAHIA BLANCA",
@@ -35954,6 +36084,19 @@
           "ARGENTINA",
           "VIETNAM",
           "BUNGE",
+          "CJ INTERNATIONAL"
+        ],
+        [
+          "BAHIA BLANCA",
+          "OTAMERICA 1 PUERTO ROSALES",
+          "CALYPSO",
+          "SAILED",
+          "2026-11-10",
+          "1 00.000,00",
+          "CRUDE OIL",
+          "ARGENTINA",
+          "UNITED STATES",
+          "CHEVRON",
           "NOT AVAILABLE"
         ],
         [
@@ -36006,7 +36149,7 @@
           "ARGENTINA",
           "VIETNAM",
           "AGD",
-          "NOT AVAILABLE"
+          "SUCDEN"
         ],
         [
           "NUEVA PALMIRA(R.O.U.)",
@@ -36152,6 +36295,19 @@
           "NOT AVAILABLE"
         ],
         [
+          "NUEVA PALMIRA(R.O.U.)",
+          "ANP (SOUTH SECTION)",
+          "BANGLAR AGRAJATRA",
+          "SAILED",
+          "2026-11-13",
+          "4.400,00",
+          "FERTILIZER LIQUID",
+          "NOT AVAILABLE",
+          "URUGUAY",
+          "NOT AVAILABLE",
+          "NOT AVAILABLE"
+        ],
+        [
           "MONTEVIDEO(R.O.U)",
           "PIER 8-9 (MONTEVIDEO)",
           "CLEANTEC",
@@ -36284,22 +36440,22 @@
       ]
     }
   },
-  "output_sha256": "e2eb0815d39b8efa3e07751c54bf00ddeb317a1b9befe43321e8cf89a3ac3a62",
+  "output_sha256": "120aaacd751e3a6ac621bc8705442115edbef74b43c4eb521f3f51232adfd961",
   "report": {
-    "report_date": "2026-11-12",
-    "source_rows": 192,
-    "eligible_rows": 1446,
+    "report_date": "2026-11-13",
+    "source_rows": 204,
+    "eligible_rows": 1452,
     "products": {
-      "SBM": 494,
-      "MAIZE": 661,
+      "SBM": 497,
+      "MAIZE": 663,
       "WHEAT": 142,
       "SORGHUM": 22,
       "SUNFLOWER": 4,
-      "SOYA": 101,
+      "SOYA": 102,
       "BARLEY": 22
     },
-    "snapshot_tons": 36573620.935,
+    "snapshot_tons": 36753223.025,
     "missing_months": [],
-    "pdf_sha256": "04174feeba76e2328972512ad2415e55b0a58128199b729707692e3b9a367f0c"
+    "pdf_sha256": "880549275f78ff95961d8ebca8e48728bef83843a6afd8c6e2aca7b13c50fd2f"
   }
 }
